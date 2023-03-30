@@ -14,6 +14,7 @@ jobs:
       - run: npm install && CI=false npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
+          entrypoint: /home/runner/work/test-nextjs/test-nextjs
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_TEST_NEXTJS_9F1A2 }}'
           channelId: live
