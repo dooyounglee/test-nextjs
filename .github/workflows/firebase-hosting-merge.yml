@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: npm install && npm run build && next export
+      - run: npm install && npm run build && npx next export
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           entrypoint: /home/runner/work/test-nextjs/test-nextjs
