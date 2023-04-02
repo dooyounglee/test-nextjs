@@ -15,3 +15,4 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_TEST_NEXTJS_9F1A2 }}'
           projectId: test-nextjs-9f1a2
+          FIREBASE_CLI_EXPERIMENTS: webframeworks
